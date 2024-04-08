@@ -5,16 +5,25 @@ import { PublicClientApplication, EventType, EventMessage, AuthenticationResult 
 import { msalConfig } from './util/login-logic/auth-config.ts'
 
 
-import App from './App.tsx'
 import './index.css'
 import NotFoundPage from './pages/NotFoundPage.tsx'
 import { MsalProvider } from '@azure/msal-react'
+import LoginPage from './pages/LoginPage.tsx'
+import LoginPage2 from './pages/LoginPage2.tsx'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App/>,
+    element: <LoginPage2/>,
     errorElement: <NotFoundPage/>
+  },
+  {
+    path: '/login',
+    element: <LoginPage/>,
+  },
+  {
+    path: '/login2',
+    element: <LoginPage2/>,
   },
 ]);
 

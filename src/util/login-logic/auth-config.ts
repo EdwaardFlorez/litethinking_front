@@ -1,6 +1,4 @@
-import { LogLevel } from "@azure/msal-browser";
-
-const url = 'http://localhost:56369';
+const url = 'https://d1sqw3c8j5yb58.cloudfront.net/';
 
 export const msalConfig = {
     auth: {
